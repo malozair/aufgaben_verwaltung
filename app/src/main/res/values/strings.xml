@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">newUpdate</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="add_group">Add Group</string>
+    <string name="description">Description</string>
+    <string name="titel">Titel</string>
+    <string name="save">Save</string>
+    <string name="new_titel">New Titel</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

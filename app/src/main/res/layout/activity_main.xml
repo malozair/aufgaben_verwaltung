@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+
+    tools:context=".ui.view.MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/group_item"/>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center|end"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        app:icon="@drawable/action_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        app:layout_constraintBottom_toTopOf="@id/add_fab"
+        app:layout_constraintEnd_toEndOf="@id/add_fab"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/edit_foreground"
+        app:fabSize="normal"
+        android:contentDescription="@string/app_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editting"
+        android:text="@string/edit"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit"
+        app:layout_constraintEnd_toStartOf="@id/edit"
+        app:layout_constraintTop_toTopOf="@id/edit"
+        android:textColor="@color/colorPrimary"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addGroup"
+        app:layout_constraintBottom_toTopOf="@id/edit"
+        app:layout_constraintEnd_toEndOf="@id/edit"
+        app:layout_constraintEnd_toStartOf="@id/edit"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/groups_icon_foreground"
+        app:fabSize="normal"
+        android:contentDescription="@string/app_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_group"
+        android:text="@string/add_group"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/addGroup"
+        app:layout_constraintEnd_toStartOf="@id/addGroup"
+        app:layout_constraintTop_toTopOf="@id/addGroup"
+        android:textColor="@color/colorPrimary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
